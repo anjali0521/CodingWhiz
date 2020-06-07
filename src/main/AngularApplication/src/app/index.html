@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TechAcademyUi</title>
+  <base href="/techacademy">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0%;
+      }
+      body {
+       background-color:whitesmoke;
+       font-family: 'Comic Sans MS';
+          }
+          h1 {
+            position: absolute;
+            left: 28%;
+            top:35%;
+            font: bold;
+          }
+          h3 {
+            
+            position: absolute;
+            left: 28%;
+            top:40%;
+            font: bold;
+
+                    }
+          
+          p {
+             position: absolute;
+            left: 28%;
+            top:45%;
+            font-style: bold;
+                    }
+                    img{
+                      position: absolute;
+                      left: 20%;
+                      top:35%;
+
+
+                    }
+                    
+    </style>
+ 
+    
+</head>
+<body class="mat-typography">
+  <img src="assets/img/Logo.png">
+<h1>Welcome to 'YoursAcademy'</h1>
+<h3>A place to fulfill all your Academic needs</h3>
+<p>Dont Let the fear of Covid stop you... Study from home at your own convience and safely.</p>
+<button style="position:absolute;left:28%;top:50%">New User</button>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+<button mat-menu-item style="position:absolute;left:42%;top:50%">Login</button>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "da73b339-271e-4adc-845b-246530dff496", // The ID of this integration.
+    region: "eu-gb", // The region your integration is hosted in.
+    serviceInstanceID: "e20b6dba-f5fd-4c45-b301-314e4f338c55", // The ID of your service instance.
+    onLoad: function (instance) { instance.render(); }
+  };
+  setTimeout(function () {
+    const t = document.createElement('script');
+    t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+  </app-root>
+</body>
+</html>

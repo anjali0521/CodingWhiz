@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" class="toolbarBottomMargin">
+  <button mat-button [matMenuTriggerFor]="menu">Home</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Your Dashboard</button>
+    <button mat-menu-item>Offered Subjects</button>
+    <button mat-menu-item>About Us</button>
+
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu1">Assesments</button>
+  <mat-menu #menu1="matMenu">
+    <button mat-menu-item>Quiz</button>
+    <button mat-menu-item>Subjective Tests</button>
+    <button mat-menu-item>View Results</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu2">Downloads</button>
+  <mat-menu #menu2="matMenu">
+    <button mat-menu-item>Study Material</button>
+    <button mat-menu-item>Videos</button>
+    <button mat-menu-item>Practice Tests</button>
+    <button mat-menu-item>Syllabus</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu3">Forums</button>
+  <mat-menu #menu3="matMenu">
+    <button mat-menu-item>Discussions</button>
+    <button mat-menu-item>Ask a Question</button>
+  </mat-menu>
+  <button mat-button>Feedback</button>
+  <button mat-button>Pricing</button>
+
+
+  <button mat-button [matMenuTriggerFor]="menu4">Help</button>
+  <mat-menu #menu4="matMenu">
+    <button mat-menu-item>Enquiry</button>
+    <button mat-menu-item>Contact Us</button>
+  </mat-menu>
+
+</mat-toolbar>

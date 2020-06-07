@@ -1,0 +1,27 @@
+.toolbarBottomMargin{
+    margin-bottom: 5%;
+    margin-top: 0%
+}
+
+.marginRight{
+    margin-right:5px;
+}
+
+#first {
+    float: left;
+    margin-right: 10px;
+}
+#second {
+    float: left;
+}
+
+#clear {
+    clear: both;
+}
+.messageAlign{
+    padding-left : 25%;
+}
+
+.outerContainer{
+    margin-top:15%;
+}
