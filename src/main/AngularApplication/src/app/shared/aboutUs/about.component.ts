@@ -20,5 +20,10 @@ import { Router } from '@angular/router';
       this.display = false;
       this.router.navigateByUrl('/login');
     }
+
+    timetable(){
+      this.display = false;
+      this.router.navigateByUrl('/timetable');
+    }
   }
   

@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { WelcomePageComponent } from 'src/app/welcome-page/welcome-page-form/welcome-page.component';
+import { LoginPageComponent } from 'src/app/login-page/login-page-form/login-page.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
@@ -21,10 +21,11 @@ import { NgxAgoraModule } from 'ngx-agora';
 import { MatMenuModule } from '@angular/material/menu';
 import { AboutComponent } from 'src/app/shared/aboutUs/about.component';
 import { StudentCalendarComponent } from 'src/app/student-dashboard/student-calendar/student-calendar.component';
-//import { FlatpickrModule } from 'angularx-flatpickr';
-//import { CalendarModule, DateAdapter } from 'angular-calendar';
-//import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
-//import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { FlatpickrModule } from 'angularx-flatpickr';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms'; 
 
 //to be removed
 import { AngularAgoraRtcModule, AgoraConfig } from 'angular-agora-rtc'; // Add
@@ -35,7 +36,7 @@ const agoraConfig: AgoraConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomePageComponent,
+    LoginPageComponent,
     StudentRegistrationFormComponent,
     HeaderComponent,
     FooterComponent,
@@ -55,14 +56,15 @@ const agoraConfig: AgoraConfig = {
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-   // NgxAgoraModule.forRoot({ AppID: environment.agora.appId }) //uncooment later
+    //NgxAgoraModule.forRoot({ AppID: environment.agora.appId }) //uncooment later
     AngularAgoraRtcModule.forRoot(agoraConfig), // remove,
-    //NgbModalModule,
-    //FlatpickrModule.forRoot(),
-    /*CalendarModule.forRoot({
+    NgbModalModule,
+    FormsModule,
+    FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,
-    }),*/ 
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

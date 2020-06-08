@@ -16,3 +16,7 @@
     width: 100vw;
     height: 100vh;
   }
+
+  html{
+    background-image: url("src/assets/images/background.jpg");
+  }
